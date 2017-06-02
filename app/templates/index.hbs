@@ -1,0 +1,26 @@
+{{outlet}}
+<div class="ui padded grid">
+  <div class="four wide column">
+    <h3 class="ui header">Preview</h3>
+  </div>
+  <div class="one wide column">
+    <h3 class="ui header">Base</h3>
+  </div>
+  <div class="one wide column">
+    <h3 class="ui header">hex</h3>
+  </div>
+  <div class="one wide column">
+    <h3 class="ui header">xterm</h3>
+    {{color.xterm}}
+  </div>
+  <div class="one wide column">
+    <h3 class="ui header">(alt)</h3>
+  </div>
+  <div class="six wide right floated column">
+    <h3 class="ui header">Description</h3>
+  </div>
+
+  {{#each model as |color|}}
+    {{base16-preview color=color}}
+  {{/each}}
+</div>
