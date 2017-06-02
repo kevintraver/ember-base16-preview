@@ -1,0 +1,6 @@
+{
+  "name": "ember-base16-preview",
+  "dependencies": {
+    "semantic-ui": "^2.2.10"
+  }
+}
